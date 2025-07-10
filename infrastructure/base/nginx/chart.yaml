@@ -6,8 +6,8 @@ metadata:
   name: nginx
   namespace: nginx
 spec:
-  chart: oci://ghcr.io/nginx/charts/nginx-ingress
-  version: 2.2.0 # Specify the version of the chart to use
+  chart: nginx/nginx-ingress-controller
+  version: 1.7.0
   interval: 5h # How often to reconcile the HelmChart
   sourceRef:
     kind: HelmRepository
