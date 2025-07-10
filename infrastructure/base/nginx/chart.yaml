@@ -7,7 +7,7 @@ metadata:
   namespace: nginx
 spec:
   chart: nginx-ingress
-  version: 2.2.x # Specify the version of the chart to use
+  version: 2.2.0 # Specify the version of the chart to use
   interval: 5h # How often to reconcile the HelmChart
   sourceRef:
     kind: HelmRepository
