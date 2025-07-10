@@ -1,0 +1,16 @@
+#
+# Kustomization custom resource to load resource located in the apps folder
+#
+
+apiVersion: kustomize.toolkit.fluxcd.io/v1
+kind: Kustomization
+metadata:
+  name: infrastructure
+  namespace: flux-system
+spec:
+  interval: 10m0s # How often to reconcile the kustomization  
+  path: ./infrastructure/staging
+  prune: true # Whether to prune resources that are no longer defined in the kustomization
+  sourceRef:
+    kind: GitRepository
+    name: flux-system
