@@ -1,6 +1,7 @@
 
 
 resources:
+  - "chart.yaml"
   - "namespace.yaml"
   - "repository.yaml"
-  - "chart.yaml"
+
